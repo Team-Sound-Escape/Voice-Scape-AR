@@ -1,10 +1,10 @@
 import React from 'react';
-import VoiceScapeMockups from './components/VoiceScapeMockups';
+import Mockup1 from './components/mockup-1';
 
 function App() {
   return (
     <div className="bg-black min-h-screen">
-      <VoiceScapeMockups />
+      <Mockup1 />
     </div>
   );
 }
