@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Voice-Scape-AR/static/css/main.3404e8d6.css",
+    "main.js": "/Voice-Scape-AR/static/js/main.ae35c9bd.js",
+    "index.html": "/Voice-Scape-AR/index.html",
+    "main.3404e8d6.css.map": "/Voice-Scape-AR/static/css/main.3404e8d6.css.map",
+    "main.ae35c9bd.js.map": "/Voice-Scape-AR/static/js/main.ae35c9bd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3404e8d6.css",
+    "static/js/main.ae35c9bd.js"
+  ]
+}
