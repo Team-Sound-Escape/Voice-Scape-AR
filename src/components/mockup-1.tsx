@@ -14,8 +14,9 @@ const Mockup1 = () => {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {/* Step 1: Initial Scan */}
-            <div className="space-y-3">
+
+            {/* Step 1: Environment Setup & World Scanning */}
+            <div className="lg:col-span-3 space-y-3">
               <div className="aspect-video bg-black rounded-xl p-6 relative overflow-hidden">
                 <div className="absolute inset-0">
                   {/* Environment scanning effect */}
@@ -32,6 +33,13 @@ const Mockup1 = () => {
                         ></div>
                       ))}
                     </div>
+
+                    {/* Floor detection highlight */}
+                    <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-blue-500/20 to-transparent"></div>
+                    
+                    {/* Wall detection highlights */}
+                    <div className="absolute top-0 bottom-0 right-0 w-24 bg-gradient-to-l from-blue-500/20 to-transparent"></div>
+                    <div className="absolute top-0 bottom-0 left-0 w-24 bg-gradient-to-r from-blue-500/20 to-transparent"></div>
                   </div>
                   
                   {/* Scan indicator */}
@@ -46,11 +54,11 @@ const Mockup1 = () => {
                   </div>
                 </div>
               </div>
-              <p className="text-sm text-gray-400">Step 1: Environment scanning and spatial mapping</p>
+              <p className="text-sm text-gray-400">Environment Analysis: World mesh scanning and spatial mapping using optimized World Query</p>
             </div>
 
             {/* Step 2: Voice Activation */}
-            <div className="space-y-3">
+            <div className="lg:col-span-3 space-y-3">
               <div className="aspect-video bg-black rounded-xl p-6 relative overflow-hidden">
                 <div className="absolute inset-0">
                   {/* Voice activation rings */}
@@ -86,11 +94,11 @@ const Mockup1 = () => {
                   </div>
                 </div>
               </div>
-              <p className="text-sm text-gray-400">Step 2: Voice command activation</p>
+              <p className="text-sm text-gray-400">Voice Interface: Hands-free command system with spatial audio feedback</p>
             </div>
 
             {/* Step 3: Grid Creation */}
-            <div className="space-y-3">
+            <div className="lg:col-span-3 space-y-3">
               <div className="aspect-video bg-black rounded-xl p-6 relative overflow-hidden">
                 <div className="absolute inset-0">
                   {/* Pink beams */}
@@ -120,11 +128,11 @@ const Mockup1 = () => {
                   </div>
                 </div>
               </div>
-              <p className="text-sm text-gray-400">Step 3: Mix grid initialization</p>
+              <p className="text-sm text-gray-400">Mix grid initialization</p>
             </div>
 
-            {/* Scene 1: AR Mix Board */}
-            <div className="space-y-3">
+            {/* Scene 4: AR Mix Board */}
+            <div className="lg:col-span-3 space-y-3">
               <div className="aspect-video bg-black rounded-xl p-6 relative overflow-hidden">
                 <div className="absolute inset-0">
                   {/* Grid system with active blocks */}
@@ -177,8 +185,8 @@ const Mockup1 = () => {
               <p className="text-sm text-gray-400">AR Mix Board: Hand gestures place sound blocks into the grid</p>
             </div>
 
-            {/* Scene 2: Interaction Preview */}
-            <div className="space-y-3">
+            {/* Scene 5: Interaction Preview */}
+            <div className="lg:col-span-3 space-y-3">
               <div className="aspect-video bg-black rounded-xl p-6 relative overflow-hidden">
                 <div className="absolute inset-0">
                   {/* Audio ray visualization */}
@@ -208,8 +216,8 @@ const Mockup1 = () => {
               <p className="text-sm text-gray-400">Interaction Preview: Visual feedback for sound block placement</p>
             </div>
 
-            {/* Scene 3: Voice Integration */}
-            <div className="space-y-3">
+            {/* Scene 6: Voice Integration */}
+            <div className="lg:col-span-3 space-y-3">
               <div className="aspect-video bg-black rounded-xl p-6 relative overflow-hidden">
                 <div className="absolute inset-0">
                   {/* Command list */}
@@ -243,8 +251,67 @@ const Mockup1 = () => {
               <p className="text-sm text-gray-400">Voice Commands: Seamless integration with gesture controls</p>
             </div>
 
-            {/* Scene 4: Full Experience Integration */}
-            <div className="space-y-3">
+            {/* Scene 7: Audio Visualization & Fractals */}
+            <div className="lg:col-span-3 space-y-3">
+              <div className="aspect-video bg-cover rounded-xl p-6 relative overflow-hidden">
+                <div className="absolute inset-0 bg-black/60">
+                  {/* Enhanced neon grid floor */}
+                  <div className="absolute bottom-0 left-0 right-0 h-40 perspective-1000">
+                    <div className="h-full grid grid-cols-8 transform rotate-x-60">
+                      {[...Array(16)].map((_, i) => (
+                        <div key={i} className="border-t border-l border-purple-500/30 relative">
+                          <div className="absolute inset-0 bg-gradient-to-b from-purple-500/5 to-transparent"></div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                  
+                  {/* Enhanced audio reactive fractals */}
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    {[...Array(12)].map((_, i) => (
+                      <div key={i} className="absolute">
+                        <div className="w-40 h-40 border border-purple-500/20 transform"
+                             style={{
+                               transform: `rotate(${i * 30}deg) scale(${1 + i * 0.2})`,
+                               animation: 'pulse 2s infinite',
+                               animationDelay: `${i * 0.2}s`
+                             }}>
+                          <div className="absolute inset-0 bg-gradient-to-br from-purple-500/5 to-transparent"></div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                  
+                  {/* Enhanced audio waveform */}
+                  <div className="absolute bottom-0 left-0 right-0 h-32">
+                    <div className="flex items-end justify-around h-full">
+                      {[...Array(24)].map((_, i) => (
+                        <div key={i} className="relative">
+                          <div className="w-1 bg-gradient-to-t from-purple-600/80 to-blue-400/80 rounded-t-sm"
+                               style={{
+                                 height: `${30 + Math.sin(i * 0.5) * 50}%`,
+                                 animation: 'bounce 1s infinite',
+                                 animationDelay: `${i * 0.05}s`
+                               }}>
+                          </div>
+                          <div className="absolute inset-x-0 bottom-0 h-full bg-gradient-to-t from-purple-500/20 to-transparent blur-sm"
+                               style={{
+                                 height: `${20 + Math.sin(i * 0.5) * 40}%`,
+                                 animation: 'bounce 1s infinite',
+                                 animationDelay: `${i * 0.05}s`
+                               }}>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p className="text-sm text-gray-400">Audio Visualization: Real-time FFT analysis driving procedural fractal generation</p>
+            </div>
+
+            {/* Scene 8: Full Experience Integration */}
+            <div className="lg:col-span-3 space-y-3">
               <div className="aspect-video bg-black rounded-xl p-6 relative overflow-hidden">
                 <div className="absolute inset-0">
                   {/* Background grid */}
@@ -279,40 +346,6 @@ const Mockup1 = () => {
               <p className="text-sm text-gray-400">Complete Experience: Multimodal interaction with real-time feedback</p>
             </div>
 
-            {/* Full experience visualization */}
-            <div className="lg:col-span-3 space-y-3">
-              <div className="aspect-video bg-black rounded-xl p-6 relative overflow-hidden">
-                <div className="absolute inset-0">
-                  {/* Background effects */}
-                  <div className="absolute inset-0 grid grid-cols-8 gap-1 opacity-20">
-                    {[...Array(64)].map((_, i) => (
-                      <div key={i} className="border border-blue-500/30"></div>
-                    ))}
-                  </div>
-
-                  {/* Active elements */}
-                  <div className="absolute bottom-12 left-0 right-0 h-32">
-                    <div className="grid grid-cols-8 gap-2 h-full px-4">
-                      {[...Array(8)].map((_, i) => (
-                        <div key={i} 
-                             className={`bg-gradient-to-t ${i % 2 === 0 ? 'from-purple-500/40' : 'from-blue-500/40'} to-transparent rounded-sm animate-pulse`}
-                             style={{animationDelay: `${i * 0.2}s`}}
-                        ></div>
-                      ))}
-                    </div>
-                  </div>
-
-                  {/* Status display */}
-                  <div className="absolute top-4 right-4 bg-black/80 backdrop-blur-sm border border-purple-500/30 rounded-lg p-3">
-                    <div className="space-y-1 text-sm font-mono">
-                      <div className="text-blue-400 text-xl">195 BPM</div>
-                      <div className="text-purple-300">4 Layers Active</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <p className="text-sm text-gray-400">Final Step: Complete experience with all systems active</p>
-            </div>
           </div>
 
           <div className="mt-8 p-6 bg-purple-900/10 rounded-lg border border-purple-500/20">
@@ -321,27 +354,19 @@ const Mockup1 = () => {
               <div>
                 <h4 className="font-medium text-blue-300 mb-2">Setup Phase</h4>
                 <ul className="space-y-1.5 text-gray-300">
-                  <li>• Environment scanning initializes space</li>
-                  <li>• Voice activation prepares system</li>
-                  <li>• Grid system creates work area</li>
-                  <li>• Gesture zones enable hand tracking</li>
-                  <li>• Pinch gesture to grab sound blocks</li>
-                  <li>• Drop zones highlight on approach</li>
-                  <li>• Visual feedback for successful placement</li>
-                  <li>• Grid snapping for precise positioning</li>
+                  <li>• Environment scanning and mapping</li>
+                  <li>• Voice system activation</li>
+                  <li>• Grid system initialization</li>
+                  <li>• Gesture tracking setup</li>
                 </ul>
               </div>
               <div>
                 <h4 className="font-medium text-blue-300 mb-2">Creation Phase</h4>
                 <ul className="space-y-1.5 text-gray-300">
-                  <li>• Place sound blocks using gestures</li>
-                  <li>• Control patterns with voice commands</li>
+                  <li>• Sound block manipulation (gestures + drop zones)</li>
+                  <li>• Voice command control</li>
                   <li>• Real-time audio visualization</li>
-                  <li>• Dynamic environment response</li>
-                  <li>• Natural language pattern control</li>
-                  <li>• Quick commands for common actions</li>
-                  <li>• Visual confirmation of commands</li>
-                  <li>• Seamless switching between modes</li>
+                  <li>• Multi-modal switching</li>
                 </ul>
               </div>
             </div>
