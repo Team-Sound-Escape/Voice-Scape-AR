@@ -1,70 +1,142 @@
-# Getting Started with Create React App
+# Voice Scape AR 🎵✨  
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Voice Scape AR is an immersive, **voice-driven augmented reality (AR) music experience** built for **Snap Spectacles**. Users can create **synthwave-inspired** music loops through **voice commands**, while **neon fractals and reactive visuals** dynamically appear in their real-world space. This hands-free approach allows for **real-time music visualization**, making **music creation more accessible and intuitive**.
 
-## Available Scripts
+## 🚀 Project Overview  
 
-In the project directory, you can run:
+- **Core Innovation**: Hands-free **voice-controlled** music sequencer in AR.
+- **Key Features**:  
+  - **Voice Commands** to create and modify music.  
+  - **FFT-based Real-Time Audio Visualization** (responsive fractals, neon animations).  
+  - **Procedural Visuals** that evolve with user-generated soundscapes.  
+  - **Spectacles Integration** for **spatially-aware music creation**.  
+  - **Short & Replayable Sessions** (~10–15 minutes per play).  
+  - **Unlockable loops, fractal styles, and shareable clips** for engagement.  
 
-### `npm start`
+🎨 **Live Demo**: [Voice Scape AR Mockup](https://team-sound-escape.github.io/Voice-Scape-AR/)  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📌 How It Works  
 
-### `npm test`
+### 🔊 Voice-Driven Interaction  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Users **speak commands** to control the experience:  
+- 🎵 **"Add Bassline"** → Introduces a synth bass layer.  
+- 🥁 **"Change Drums"** → Replaces drum loops.  
+- 🌌 **"Grow Fractals"** → Expands neon visuals.  
+- 🎨 **"Change Colors"** → Alters the AR environment’s color palette.  
 
-### `npm run build`
+### 🎶 Real-Time Audio Visualization  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **FFT-based** sound analysis maps music frequency to **fractal animations**.  
+- **Neon fractals evolve dynamically**, reacting to **volume, beat intensity, and frequency range**.  
+- **AR elements anchor in space**, enhancing immersion.  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📍 User Flow  
 
-### `npm run eject`
+1️⃣ **Lens Launch & Tutorial** (0–1 min)  
+   - Quick guide explains **voice commands**.  
+   - Users **select a starter synth loop** to begin creating.  
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2️⃣ **Music Creation & Visual Expansion** (2–10 min)  
+   - Users **layer tracks, change loops, and modify visuals** through voice.  
+   - **Audio-reactive fractals and neon lights evolve dynamically** in AR.  
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3️⃣ **Session Wrap-Up & Sharing** (10–12 min)  
+   - Users see a **snapshot** of their final visual creation.  
+   - Option to **save a clip** or **share via Snap**.  
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4️⃣ **Replay & Retention Hooks** (12–15 min)  
+   - Unlock **new color themes, sound loops, fractal effects** by returning for future sessions.  
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 🎮 Features & Technical Stack  
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+| Feature | Tech Used |
+|---------|-----------|
+| **Voice Interaction** | Lens Studio Voice Commands API |
+| **Audio Visualization** | FFT-based sound processing |
+| **Neon Fractal Effects** | GPU-optimized shaders for real-time fractal growth |
+| **World Mesh Tracking** | AR anchoring for immersive spatial interaction |
+| **Replayable Experience** | Unlockable loops, fractal styles, shareable AR music |
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 📸 Screenshots & Visuals  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 🎛 Music Sequencer  
+Users interact with a **grid-based music sequencer** in AR.
 
-### Analyzing the Bundle Size
+![Music Sequencer](docs/images/music_sequencer.png)  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 🎶 Audio Visualization  
+Neon fractals and **dynamic visual effects** respond to music.
 
-### Making a Progressive Web App
+![Audio Visualization](docs/images/audio_visualization.png)  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### 🌌 Immersive Synthwave Environment  
+A **synthwave-inspired space** where users compose and visualize music in AR.
 
-### Advanced Configuration
+![AR Environment](docs/images/ar_environment.png)  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## 📌 Project Status  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- ✅ **Concept Approved** by Snap Inc.'s **Spectacles Accelerator Program**.  
+- ✅ **Prototype in Progress** – developing the core **voice-to-visual interaction** loop.  
+- 🚧 **Next Steps**:
+  - **Improve voice recognition accuracy**.
+  - **Expand the music library with additional loops**.
+  - **Optimize visuals for real-time AR performance**.
+  - **Refine UI & accessibility for seamless hands-free control**.
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 👥 Team Sound Escape  
+
+- **Michael Chaves** – *Lead Voice Interaction & UX Designer, Developer*  
+- **Sinchana Nama** – *Lens Studio Developer / Scripting Specialist*  
+- **Christopher Park** – *3D Asset Creator (Modeling & Animation)*  
+- **Paul Reitz** – *Backend Development & Optimization*  
+
+📄 **Project Concept Document**: [Team Sound Escape Initial Concept](docs/Team_Sound_Escape_Initial_Concept.pdf)  
+
+---
+
+## 🎬 Demo & Development  
+
+📢 Want to contribute or test the prototype? **Stay tuned for upcoming builds!**  
+🔗 [Live Mockup](https://team-sound-escape.github.io/Voice-Scape-AR/)  
+
+### 📌 Requirements  
+
+- Snap **Spectacles 2025** (Required for AR integration).  
+- **Lens Studio** for local testing.  
+- **Microphone access** for voice interactions.  
+
+---
+
+## 💡 Future Plans  
+
+🔹 **Extended Voice Controls** – More detailed music production tools.  
+🔹 **Multiplayer Collaboration** – Real-time jam sessions with others.  
+🔹 **Custom Sound Packs** – User-generated sound banks for personalized experiences.  
+
+🎵 **Join us in redefining AR music!**  
+
+---
+
+## 📜 License  
+
+MIT License – Feel free to modify and expand upon the project!  
+
+---
+
+📢 **For questions, collabs, or feedback, contact us at [GitHub Issues](https://github.com/team-sound-escape/Voice-Scape-AR/issues)**.  
+
+🚀 *Let’s make AR music creation more immersive and accessible!* 🚀
